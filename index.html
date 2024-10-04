@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Guess The Number</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Guess The Number</h1>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="top">
+          <div class="number">?</div>
+        </div>
+        <div class="mid">
+          <input
+            class="field"
+            type="number"
+            placeholder="[ 1 - 20 ]"
+            min="1"
+            max="20"
+          />
+          <button class="btn check">Check</button>
+        </div>
+        <div class="bottom">
+          <h2 class="guide">Start Guessing</h2>
+          <div class="bottom-of-bottom">
+            <div class="scores">
+              <div class="score-container">
+                <h3 class="score-heading">Score:</h3>
+                <span class="score">0</span>
+              </div>
+              <div class="score-container">
+                <h3>High Score:</h3>
+                <span class="highscore">0</span>
+              </div>
+            </div>
+            <div class="retry-container">
+              <button class="btn retry to-right">Retry</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <h2 class="new-highscore blink">New Highscore Achieved!</h2>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
