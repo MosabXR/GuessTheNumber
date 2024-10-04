@@ -7,10 +7,10 @@ const guide = document.querySelector(".guide");
 const scoreLabel = document.querySelector(".score");
 const highscoreLabel = document.querySelector(".highscore");
 const retry = document.querySelector(".retry");
-const winSFX = new Audio("assets/audio/win.wav");
-const loseSFX = new Audio("assets/audio/lose.wav");
-const incorrectSFX = new Audio("assets/audio/incorrect.wav");
-const highscoreSFX = new Audio("assets/audio/highscore.wav");
+const winSFX = new Audio("./assets/audio/win.wav");
+const loseSFX = new Audio("./assets/audio/lose.wav");
+const incorrectSFX = new Audio("./assets/audio/incorrect.wav");
+const highscoreSFX = new Audio("./assets/audio/highscore.wav");
 
 let score;
 let highscore = 0;
