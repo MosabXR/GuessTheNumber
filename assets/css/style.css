@@ -22,11 +22,11 @@ main {
 }
 
 header {
-  height: 15vh;
+  height: 15dvh;
 }
 
 main {
-  height: 85vh;
+  height: 85dvh;
 }
 
 .container {
@@ -260,9 +260,9 @@ h3 {
 }
 
 .to-top {
-  transform: translateY(-100vh);
+  transform: translateY(-100dvh);
 }
 
 .to-bottom {
-  transform: translateY(100vh);
+  transform: translateY(100dvh);
 }
