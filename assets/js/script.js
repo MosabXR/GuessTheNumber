@@ -13,7 +13,10 @@ const incorrectSFX = new Audio("./assets/audio/incorrect.wav");
 const highscoreSFX = new Audio("./assets/audio/highscore.wav");
 
 let score;
-let highscore = 0;
+let highscore = localStorage.getItem("highscore")
+  ? localStorage.getItem("highscore")
+  : 0;
+highscoreLabel.textContent = highscore;
 let randomNumber;
 let gameRunning;
 
@@ -43,6 +46,7 @@ const updateHighscore = () => {
   highscore = score;
   highscoreLabel.textContent = score;
   animateHighscore();
+  localStorage.setItem("highscore", highscore);
 };
 
 const revealRandomNumber = () => {
